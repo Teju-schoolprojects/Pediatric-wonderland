@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pediatric Wonderland | Dental Adventures for Kids</title>
+    <meta name="description" content="Experience dental care like a fairytale. Pediatric Wonderland makes dental visits fun, anxiety-free, and magical with customized child comfort options, gentle tools, and storyteller dentists.">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Custom Sparkle Canvas for Cursor Trail -->
+    <canvas id="sparkle-canvas"></canvas>
+
+    <!-- Header Navigation -->
+    <header class="main-header">
+        <div class="header-container">
+            <a href="#" class="logo">
+                <svg class="logo-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM12 6C13.66 6 15 7.34 15 9C15 10.66 13.66 12 12 12C10.34 12 9 10.66 9 9C9 7.34 10.34 6 12 6ZM12 18C9.58 18 7.46 16.57 6.48 14.5C6.97 13.93 8.37 13.5 12 13.5C15.62 13.5 17.02 13.93 17.52 14.5C16.54 16.57 14.42 18 12 18Z" fill="currentColor"/>
+                </svg>
+                <span class="logo-text">Pediatric <span class="logo-highlight">Wonderland</span></span>
+            </a>
+            <nav class="nav-links">
+                <a href="#chapter-1" class="nav-link active">Our Story</a>
+                <a href="#chapter-2" class="nav-link">Playroom</a>
+                <a href="#chapter-3" class="nav-link">Gentle Care</a>
+                <a href="#chapter-5" class="nav-link">Patient Comfort</a>
+                <a href="#booking-portal" class="nav-link">Book Visit</a>
+                <a href="#faqs" class="nav-link">FAQs</a>
+            </nav>
+            <div class="header-actions">
+                <a href="#booking-portal" class="btn btn-primary btn-pulse">Book Magical Visit 🎟️</a>
+            </div>
+            <button class="mobile-menu-toggle" aria-label="Toggle Navigation Menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Vertical Storybook Timeline (Floating Tracker) -->
+    <div class="storybook-tracker" id="storybook-tracker">
+        <div class="tracker-line">
+            <div class="tracker-progress"></div>
+        </div>
+        <div class="tracker-nodes">
+            <a href="#chapter-1" class="tracker-node active" data-chapter="1" title="The Magic Tooth"><span class="node-dot"></span><span class="node-num">1</span></a>
+            <a href="#chapter-2" class="tracker-node" data-chapter="2" title="Through the Wonderland"><span class="node-dot"></span><span class="node-num">2</span></a>
+            <a href="#chapter-3" class="tracker-node" data-chapter="3" title="Tiny Precision, Toy Softness"><span class="node-dot"></span><span class="node-num">3</span></a>
+            <a href="#chapter-4" class="tracker-node" data-chapter="4" title="The Storyteller Team"><span class="node-dot"></span><span class="node-num">4</span></a>
+            <a href="#chapter-5" class="tracker-node" data-chapter="5" title="Completely at Ease"><span class="node-dot"></span><span class="node-num">5</span></a>
+            <a href="#chapter-6" class="tracker-node" data-chapter="6" title="The Big Reveal Giggle"><span class="node-dot"></span><span class="node-num">6</span></a>
+            <a href="#chapter-7" class="tracker-node" data-chapter="7" title="The Balloon Tooth Ascends"><span class="node-dot"></span><span class="node-num">7</span></a>
+            <a href="#chapter-8" class="tracker-node" data-chapter="8" title="The Storybook Promise"><span class="node-dot"></span><span class="node-num">8</span></a>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <main class="storybook-container">
+
+        <!-- CHAPTER 1: Hero Banner -->
+        <section id="chapter-1" class="story-chapter hero-section">
+            <div class="hero-video-wrapper">
+                <video class="chapter-video" src="assets/videos/scene-01.mp4" autoplay loop muted playsinline></video>
+                <div class="hero-overlay"></div>
+            </div>
+            <div class="chapter-content container">
+                <div class="hero-text-block">
+                    <span class="chapter-badge">The Magic Begins</span>
+                    <h1 class="hero-title">Where Dental Visits Become <span class="text-gradient">Magical Adventures</span></h1>
+                    <p class="hero-subtitle">Welcome to Pediatric Wonderland. We believe clinical excellence can be wrapped in storytelling, play, and absolute comfort. No scary tools. No dental anxiety. Just healthy, happy smiles.</p>
+                    <div class="hero-buttons">
+                        <a href="#booking-portal" class="btn btn-large btn-primary">Book a Magical Visit 🌟</a>
+                        <a href="#chapter-2" class="btn btn-large btn-secondary">Start the Journey ↓</a>
+                    </div>
+                </div>
+            </div>
+            <div class="wave-divider bottom-wave">
+                <svg viewBox="0 0 1440 120" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0,32L80,48C160,64,320,96,480,96C640,96,800,64,960,48C1120,32,1280,32,1360,32L1440,32L1440,120L1360,120C1280,120,1120,120,960,120C800,120,640,120,480,120C320,120,160,120,80,120L0,120Z" fill="var(--bg-card)"></path>
+                </svg>
+            </div>
+        </section>
+
+        <!-- CHAPTER 2: Waiting Playroom -->
+        <section id="chapter-2" class="story-chapter playroom-section">
+            <div class="container grid-split">
+                <div class="chapter-media animate-on-scroll">
+                    <div class="video-container-card">
+                        <video class="chapter-video" src="assets/videos/scene-02.mp4" loop muted playsinline></video>
+                        <div class="play-indicator">
+                            <span class="pulse-ring"></span>
+                            <span class="icon-play">🔊</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="chapter-text animate-on-scroll">
+                    <span class="chapter-badge">The Playroom Portal</span>
+                    <h2 class="chapter-title">Through the Wonderland</h2>
+                    <p class="chapter-description">Say goodbye to cold, sterile waiting rooms. In our interactive Playroom, your child's dental adventure starts with immersive gaming screens, soft climbing structures, and custom-built toys. It's a space designed to channel energy positively and dissolve dental fears before the appointment even starts.</p>
+                    <div class="feature-tags">
+                        <span class="tag">🎮 Interactive Play</span>
+                        <span class="tag">🧸 Sensory Toys</span>
+                        <span class="tag">🌈 Calm Atmosphere</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CHAPTER 3: Precision / Tools -->
+        <section id="chapter-3" class="story-chapter precision-section">
+            <div class="container grid-split reverse">
+                <div class="chapter-media animate-on-scroll">
+                    <div class="video-container-card">
+                        <video class="chapter-video" src="assets/videos/scene-03.mp4" loop muted playsinline></video>
+                    </div>
+                </div>
+                <div class="chapter-text animate-on-scroll">
+                    <span class="chapter-badge">The Magic Tools</span>
+                    <h2 class="chapter-title">Tiny Precision, Toy Softness</h2>
+                    <p class="chapter-description">We use advanced pediatric dental technology designed specifically for smaller, sensitive mouths. Our instruments are silent, gentle, and explained to kids using playful stories. We introduce our "dental tooth tickler" and "magic mist sprayer," turning advanced precision treatments into gentle, soft play.</p>
+                    <div class="feature-tags">
+                        <span class="tag">🔍 Micro-Precision</span>
+                        <span class="tag">🤫 Silent Technology</span>
+                        <span class="tag">🎈 Playful Terminology</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CHAPTER 4: The Storytellers -->
+        <section id="chapter-4" class="story-chapter storyteller-section">
+            <div class="container grid-split">
+                <div class="chapter-media animate-on-scroll">
+                    <div class="video-container-card">
+                        <video class="chapter-video" src="assets/videos/scene-04.mp4" loop muted playsinline></video>
+                    </div>
+                </div>
+                <div class="chapter-text animate-on-scroll">
+                    <span class="chapter-badge">The Guides</span>
+                    <h2 class="chapter-title">The Storyteller Team</h2>
+                    <p class="chapter-description">Our board-certified pediatric dentists and hygienists are trained extensively in child psychology, special needs care, and... storytelling! With puppets, interactive tooth models, and friendly, patient-first care, we meet your child at their developmental stage to build a lifetime of positive dental habits.</p>
+                    <div class="feature-tags">
+                        <span class="tag">🎓 Board-Certified</span>
+                        <span class="tag">🎭 Puppet Storytelling</span>
+                        <span class="tag">🤝 Gentle Guidance</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CHAPTER 5: Sunbeam/Calm -->
+        <section id="chapter-5" class="story-chapter sunbeam-section">
+            <div class="container grid-split reverse">
+                <div class="chapter-media animate-on-scroll">
+                    <div class="video-container-card">
+                        <video class="chapter-video" src="assets/videos/scene-05.mp4" loop muted playsinline></video>
+                    </div>
+                </div>
+                <div class="chapter-text animate-on-scroll">
+                    <span class="chapter-badge">The Relaxation Meadow</span>
+                    <h2 class="chapter-title">Completely at Ease</h2>
+                    <p class="chapter-description">For children who feel nervous or have sensory sensitivities, we offer custom relaxation protocols. From ceiling-mounted TV monitors showing their favorite cartoons to weighted blankets, sensory-calming lights, and warm aromatherapy, your child will relax like they are resting in a warm sunbeam.</p>
+                    <div class="feature-tags">
+                        <span class="tag">🛋️ Sensory Comfort</span>
+                        <span class="tag">📺 Cartoon Ceilings</span>
+                        <span class="tag">🍃 Calming Scents</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CHAPTER 6: Sparkle Reveal -->
+        <section id="chapter-6" class="story-chapter giggle-section">
+            <div class="container grid-split">
+                <div class="chapter-media animate-on-scroll">
+                    <div class="video-container-card">
+                        <video class="chapter-video" src="assets/videos/scene-06.mp4" loop muted playsinline></video>
+                    </div>
+                </div>
+                <div class="chapter-text animate-on-scroll">
+                    <span class="chapter-badge">The Sparkle Castle</span>
+                    <h2 class="chapter-title">The Big Reveal Giggle</h2>
+                    <p class="chapter-description">The best part of any dental journey is the happy smile at the finish line! After their treatment, kids check out their shiny, clean teeth in our Magic Smile Mirror and celebrate with our crew. We prioritize positive reinforcement, ensuring every child leaves feeling proud of their bravery.</p>
+                    <div class="feature-tags">
+                        <span class="tag">✨ Magic Smile Mirror</span>
+                        <span class="tag">🏆 Bravery Badges</span>
+                        <span class="tag">⭐ Positive Focus</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CHAPTER 7: Celebration -->
+        <section id="chapter-7" class="story-chapter balloon-section">
+            <div class="container grid-split reverse">
+                <div class="chapter-media animate-on-scroll">
+                    <div class="video-container-card">
+                        <video class="chapter-video" src="assets/videos/scene-07.mp4" loop muted playsinline></video>
+                    </div>
+                </div>
+                <div class="chapter-text animate-on-scroll">
+                    <span class="chapter-badge">The Grand Finale</span>
+                    <h2 class="chapter-title">The Balloon Tooth Ascends</h2>
+                    <p class="chapter-description">Every visit concludes with a special celebration. Watch as your child sends their paper "Balloon Tooth" soaring on our wall of fame, grabs a token for the Magical Toy Chest, and collects their personalized goodie bag containing a kid-sized brush, timer, and stickers.</p>
+                    <div class="feature-tags">
+                        <span class="tag">🎈 Balloon Tooth Ceremony</span>
+                        <span class="tag">🎁 Toy Chest Rewards</span>
+                        <span class="tag">🎒 Healthy Care Bag</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CHAPTER 8: Portal & FAQs -->
+        <section id="chapter-8" class="story-chapter storybook-ending">
+            <div class="ending-video-wrapper">
+                <video class="chapter-video" src="assets/videos/scene-08.mp4" loop muted playsinline></video>
+                <div class="ending-overlay"></div>
+            </div>
+            
+            <div class="chapter-content container">
+                <div class="ending-grid">
+                    <!-- Magical Booking Portal -->
+                    <div id="booking-portal" class="booking-portal-card animate-on-scroll">
+                        <h2 class="portal-title">Book a Magical Visit</h2>
+                        <p class="portal-subtitle">Build your child's custom adventure path below to generate their Magical Ticket!</p>
+                        
+                        <form id="magical-booking-form" class="portal-form">
+                            <div class="form-group-row">
+                                <div class="form-group">
+                                    <label for="child-name">Child's Name</label>
+                                    <input type="text" id="child-name" placeholder="Little adventurer's name" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="child-age">Age</label>
+                                    <input type="number" id="child-age" min="1" max="18" placeholder="Age" required>
+                                </div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="adventure-theme">Select Adventure Theme</label>
+                                <select id="adventure-theme">
+                                    <option value="Space Explorer 🚀">Space Explorer 🚀 (Galaxy Room & Stars)</option>
+                                    <option value="Jungle Ranger 🦁">Jungle Ranger 🦁 (Safari Room & Animals)</option>
+                                    <option value="Undersea Mermaid 🧜‍♀️">Undersea Mermaid 🧜‍♀️ (Coral Room & Shells)</option>
+                                    <option value="Fairy Tale Castle 🏰">Fairy Tale Castle 🏰 (Crowns & Knight Shields)</option>
+                                </select>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="paste-flavor">Select Dental Toothpaste Flavor</label>
+                                <select id="paste-flavor">
+                                    <option value="Bubblegum Blast 🍬">Bubblegum Blast 🍬</option>
+                                    <option value="Strawberry Sparkle 🍓">Strawberry Sparkle 🍓</option>
+                                    <option value="Marshmallow Dream ☁️">Marshmallow Dream ☁️</option>
+                                    <option value="Minty Magic 🌿">Minty Magic 🌿</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="comfort-buddy">Comfort Accommodations</label>
+                                <select id="comfort-buddy">
+                                    <option value="Cozy Weighted Blanket 🧸">Cozy Weighted Blanket 🧸</option>
+                                    <option value="Noise-Canceling Cartoon Headphones 🎧">Noise-Canceling Cartoon Headphones 🎧</option>
+                                    <option value="Warm Aromatherapy Cloud ☁️">Warm Aromatherapy Cloud ☁️</option>
+                                    <option value="None - Just Ready to Play! ⚡">None - Just Ready to Play! ⚡</option>
+                                </select>
+                            </div>
+
+                            <button type="submit" class="btn btn-primary btn-block">Generate Magic Ticket 🎟️</button>
+                        </form>
+
+                        <!-- Generated Ticket (Hidden by default, displayed via JS) -->
+                        <div id="magic-ticket-display" class="magic-ticket-wrapper hidden">
+                            <div class="ticket-card">
+                                <div class="ticket-header">
+                                    <h3>Pediatric Wonderland</h3>
+                                    <span>Boarding Pass</span>
+                                </div>
+                                <div class="ticket-body">
+                                    <div class="ticket-field">
+                                        <label>Adventurer</label>
+                                        <span id="ticket-child-name">-</span>
+                                    </div>
+                                    <div class="ticket-details-grid">
+                                        <div class="ticket-field">
+                                            <label>Theme</label>
+                                            <span id="ticket-theme">-</span>
+                                        </div>
+                                        <div class="ticket-field">
+                                            <label>Flavor</label>
+                                            <span id="ticket-flavor">-</span>
+                                        </div>
+                                    </div>
+                                    <div class="ticket-field">
+                                        <label>Comfort Buddy</label>
+                                        <span id="ticket-comfort">-</span>
+                                    </div>
+                                    <div class="ticket-barcode">
+                                        <span>||||| | |||| ||| || ||||</span>
+                                        <small>TICKET-ADVENTURE-2026</small>
+                                    </div>
+                                </div>
+                                <button type="button" id="print-ticket-btn" class="btn btn-secondary btn-small">Print Ticket 🖨️</button>
+                                <button type="button" id="reset-ticket-btn" class="btn btn-text">Customize Again</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- FAQs and Storybook Info -->
+                    <div id="faqs" class="faqs-card animate-on-scroll">
+                        <h2 class="portal-title">Parent Wonderland Scroll</h2>
+                        <p class="portal-subtitle">We have answers to your questions, to help set your mind at ease.</p>
+                        
+                        <div class="faq-accordion">
+                            <div class="faq-item">
+                                <button class="faq-trigger">
+                                    <span>When should my child first see a dentist?</span>
+                                    <span class="faq-icon">+</span>
+                                </button>
+                                <div class="faq-content">
+                                    <p>The American Academy of Pediatric Dentistry recommends visiting by age one, or within six months of their first tooth erupting. Early visits help children build familiarity and allow us to monitor early dental hygiene.</p>
+                                </div>
+                            </div>
+
+                            <div class="faq-item">
+                                <button class="faq-trigger">
+                                    <span>My child is terrified of dentists. How do you help?</span>
+                                    <span class="faq-icon">+</span>
+                                </button>
+                                <div class="faq-content">
+                                    <p>We specialized in dental anxiety. We use a storybook narrative, "tell-show-do" interactive training, child-friendly terms, puppet demonstrations, and plenty of visual distraction. We go strictly at the child's speed.</p>
+                                </div>
+                            </div>
+
+                            <div class="faq-item">
+                                <button class="faq-trigger">
+                                    <span>Do you accept insurance?</span>
+                                    <span class="faq-icon">+</span>
+                                </button>
+                                <div class="faq-content">
+                                    <p>Yes, we accept most major dental insurance plans. We provide a full insurance check before your appointment so there are no surprise fees. Contact our front desk, and we will happily verify your coverage.</p>
+                                </div>
+                            </div>
+
+                            <div class="faq-item">
+                                <button class="faq-trigger">
+                                    <span>Can I stay in the room with my child?</span>
+                                    <span class="faq-icon">+</span>
+                                </button>
+                                <div class="faq-content">
+                                    <p>Absolutely! We encourage parents to be present during our dental journeys. Your comfort and reassurance play a huge part in making your child feel completely safe.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer-bar">
+        <div class="container footer-grid">
+            <div class="footer-about">
+                <h3>Pediatric Wonderland</h3>
+                <p>A magical dental journey where children are heroes, tools are toys, and clinical excellence is always anxiety-free.</p>
+            </div>
+            <div class="footer-contact">
+                <h4>Wonderland Base</h4>
+                <p>📍 777 Rainbow Way, Smile Valley, CA 90210</p>
+                <p>📞 Phone: (555) 868-8422 (TOOTH-MAGIC)</p>
+                <p>✉️ Email: hello@pediatricwonderland.com</p>
+            </div>
+            <div class="footer-hours">
+                <h4>Adventure Hours</h4>
+                <p>Mon - Fri: 8:00 AM - 5:00 PM</p>
+                <p>Saturday: 9:00 AM - 2:00 PM (By Appointment)</p>
+                <p>Sunday: Closed (Dreaming of Smiles)</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Pediatric Wonderland Dental Care. All rights reserved. Made with magical care.</p>
+        </div>
+    </footer>
+
+    <!-- Main JavaScript file -->
+    <script src="app.js"></script>
+</body>
+</html>
