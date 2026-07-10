@@ -1097,7 +1097,7 @@ a {
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
     .nav-links, .header-actions {
         display: none; /* Hide standard nav on mobile */
     }
