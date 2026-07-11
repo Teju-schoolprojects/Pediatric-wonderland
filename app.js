@@ -81,23 +81,6 @@ function initVideoPlayback() {
         vid.setAttribute('muted', '');
         vid.setAttribute('playsinline', '');
     });
-
-    // Custom Interactive Play/Unmute Control (For Chapter 2 demo)
-    const playIndicator = document.querySelector('.play-indicator');
-    if (playIndicator) {
-        playIndicator.addEventListener('click', () => {
-            const playroomVideo = playIndicator.previousElementSibling;
-            if (playroomVideo) {
-                if (playroomVideo.muted) {
-                    playroomVideo.muted = false;
-                    playIndicator.querySelector('.icon-play').textContent = '🔇';
-                } else {
-                    playroomVideo.muted = true;
-                    playIndicator.querySelector('.icon-play').textContent = '🔊';
-                }
-            }
-        });
-    }
 }
 
 /* -------------------------------------------------------------
