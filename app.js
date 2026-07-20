@@ -408,3 +408,25 @@ function initSparkleCursor() {
     }
     animate();
 }
+
+/* -------------------------------------------------------------
+   Safeguard: Automatically Strip any Injected 'CLOSED NOW' Text/Badges
+------------------------------------------------------------- */
+function removeClosedNowBadges() {
+    try {
+        const elements = document.querySelectorAll('*');
+        elements.forEach(el => {
+            if (el.children.length === 0 && el.textContent && el.textContent.toUpperCase().includes('CLOSED NOW')) {
+                el.style.display = 'none';
+                el.style.visibility = 'hidden';
+                if (el.parentElement && el.parentElement.children.length === 1) {
+                    el.parentElement.style.display = 'none';
+                }
+            }
+        });
+    } catch (e) {}
+}
+
+document.addEventListener('DOMContentLoaded', removeClosedNowBadges);
+window.addEventListener('load', removeClosedNowBadges);
+setInterval(removeClosedNowBadges, 800);
