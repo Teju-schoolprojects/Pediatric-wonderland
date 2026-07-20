@@ -428,6 +428,13 @@ a {
     letter-spacing: 1px;
 }
 
+.chapter-badge.open-badge {
+    background-color: rgba(46, 213, 115, 0.2);
+    color: #2ed573;
+    border: 1px solid rgba(46, 213, 115, 0.4);
+    box-shadow: 0 0 12px rgba(46, 213, 115, 0.3);
+}
+
 /* Section styling variations */
 .playroom-section { background-color: rgba(163, 218, 255, 0.05); }
 .precision-section { background-color: rgba(162, 232, 221, 0.05); }
