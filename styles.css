@@ -481,7 +481,7 @@ a {
     padding-top: 140px;
 }
 
-.hero-video-wrapper {
+.hero-bg-wrapper, .hero-video-wrapper {
     position: absolute;
     top: 0;
     left: 0;
@@ -490,10 +490,11 @@ a {
     z-index: 1;
 }
 
-.hero-video-wrapper video {
+.hero-bg-image, .hero-video-wrapper video {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    filter: brightness(0.9) contrast(1.05);
 }
 
 .hero-overlay {
@@ -502,7 +503,8 @@ a {
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(135deg, rgba(30, 27, 51, 0.8), rgba(157, 141, 242, 0.6));
+    background: linear-gradient(135deg, rgba(30, 27, 51, 0.75), rgba(157, 141, 242, 0.45));
+    backdrop-filter: blur(2px);
     z-index: 2;
 }
 
